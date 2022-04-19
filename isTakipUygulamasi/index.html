@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="custom.css">
+    <title>Is Takip Uygulamasi</title>
+</head>
+<body>
+    
+    <div class="container" style ="margin-top:20px;">
+
+        <img style="width: 8%;" class="logo" src="logom.png" alt="">
+        <hr>        
+        
+        
+            <h5>Create New Job</h5>
+            <div class="card-body">
+                    <form id = "todo-form" name="form">
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label  class="form-label">Job Name</label>
+                                <input class="form-control" type="text" name="todo" id = "todo">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-label">Job Priority</label>
+                                <input class="form-control" type="text" id = "datalist" placeholder="Choose" list="datalistOptions">
+                                <datalist id="datalistOptions">
+                                    <option value="Urgent">
+                                    <option value="Regular">
+                                    <option value="Trivial">
+                                </datalist>
+                            </div>
+                            <button style="width: 5rem; height: 2.5rem; margin-top: 30px;" type="submit" class="btn btn-primary">+ Create </button>
+                        </div>
+                    </form>                                  
+             </div>
+             <h5 class="card-title" id = "tasks-title">Job List</h5>
+             <div class="card row">
+             <div class="card-body">
+                    
+                    <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <input class="form-control" type="text" name="filter" id = "filter" placeholder="Job Name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input class="form-control" type="text"id = "datalist" placeholder="Priority(all)">
+                            </div>
+                    </div>
+                    <div class="card-header">
+                        <label>Name</label> 
+                        <label style="margin-left: 60%;">Priority</label> 
+                        <label style="margin-left: 20%;">Action</label> 
+                    </div>
+                    <ul class="list-group">
+                        <!-- <li class="list-group-item d-flex justify-content-between"> 
+                           
+                        </li> -->
+                </div>
+              </div>
+        
+    </div>
+<br><br>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
+</body>
+</html>
